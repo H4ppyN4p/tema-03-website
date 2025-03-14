@@ -6,6 +6,10 @@
     --blackish: #242733;
 }
 
+body {
+    background-color: var(--background);
+}
+
 * {
     margin: 0;
     border: 0;
@@ -45,3 +49,182 @@ header {
     border: 2px solid var(--blackish);
     margin: auto;
 }
+
+
+/* Carousel Section */
+
+.carousel-card {
+    height: 410px;
+    width: 250px;
+    background-color: var(--main);
+    border: 2px solid black;
+}
+
+.cta-button {
+    width: 230px;
+    height: 60px;
+    background-color: var(--main);
+    border: 1px solid black;
+    margin: 5px 0;
+}
+
+.cta-text {
+    background-color: var(--main);
+    font-size: 32px;
+}
+
+
+#carousel-section {
+    height: 520px;
+    border: 2px solid darkgreen;
+    overflow-x: hidden;
+}
+
+#carousel-header {
+    text-align: center;
+}
+
+#carousel {
+    position: relative;
+}
+
+#carousel-background {
+    background-color: var(--dark);
+    height: 330px;
+    width: 100%;
+    position: absolute;
+
+    top: 40px;
+}
+
+#carousel-card-1 {
+    position: absolute;
+    left: -215px;
+    background-color: red;
+}
+
+#carousel-card-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#carousel-card-3 {
+    position: absolute;
+    right: -215px;
+    margin: auto;
+}
+
+#button-section {
+    width: 100%;
+    height: 200px;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+/* favourites section*/
+
+#favourites-section {
+    border: 2px solid darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#favourites-background {
+    position: absolute;
+    margin-top: 100px;
+    width: 190px;
+    height: 700px;
+    background-color: var(--dark);
+
+}
+
+.favourites-card {
+    height: 240px;
+    width: 250px;
+    background-color: var(--main);
+    border: 2px solid var(--blackish);
+    margin: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.read-more-button {
+    width: 157px;
+    height: 40px;
+    background-color: var(--blackish);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 220px;
+    margin: auto;
+}
+
+.read-more-text {
+    background-color: var(--blackish);
+    font-size: 24px;
+    color: var(--accent);  
+}
+
+/* Searh recipes section */
+
+.recipes-sub-header {
+    text-align: center;
+}
+
+.recipes-checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blackish);
+    color: var(--accent);
+    width: 60%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 3px;
+}
+
+.recipes-checkbox, p {
+    color: var(--accent);
+    padding-left: 5px;
+}
+
+.checkbox-box {
+    border: 3px solid var(--accent);
+    background-color: var(--main);
+    margin-right: 10px;
+}
+
+.recipes-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blackish);
+    color: var(--accent);
+    width: 60%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 3px;
+}
+
+
+
+#search-recipes-section{
+    background-color: var(--dark);
+    width: 90%;
+    margin: auto;
+}
+
+#search-recipes-header {
+    text-align: center;
+    background-color: var(--dark);
+}
+
