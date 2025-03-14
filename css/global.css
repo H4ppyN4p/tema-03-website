@@ -18,8 +18,10 @@ body {
 }
 
 
+/* Header */
+
 header {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .menu-content {
@@ -48,6 +50,7 @@ header {
     width: 90%;
     border: 2px solid var(--blackish);
     margin: auto;
+    margin-bottom: 40px;
 }
 
 
@@ -176,6 +179,10 @@ header {
 
 /* Searh recipes section */
 
+.recipes-sub-section {
+    margin: 20px 0;
+}
+
 .recipes-sub-header {
     text-align: center;
 }
@@ -221,10 +228,65 @@ header {
     background-color: var(--dark);
     width: 90%;
     margin: auto;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    border: 1px solid red;
 }
 
 #search-recipes-header {
     text-align: center;
     background-color: var(--dark);
+}
+
+#recipes-section-button {
+    width: 157px;
+    height: 40px;
+    background-color: var(--blackish);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 490px;
+    margin: auto;
+}
+
+/* All dishes section */
+
+.dishes-sub-section {
+    position: relative;
+}
+
+.dishes-background {
+    position: absolute;
+    width: 190px;
+    height: 400px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 100px;
+    background-color: var(--dark);
+}
+
+.dishes-card {
+    height: 240px;
+    width: 250px;
+    background-color: var(--main);
+    border: 2px solid var(--blackish);
+    margin: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#all-dishes-section {
+    border: 2px solid darkblue;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+#all-dishes-header {
+    text-align: center;
 }
 
