@@ -13,10 +13,30 @@
         <div class="menu-content">  
             <h1>Low Spoon Foods</h1>
 
-            <div class="menu-box">
+            <button onclick="toggleMenu()" class="menu-box" name="menu-button">
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
+            </button>
+        </div>
+
+        <div id="hidden-items">
+            <div id="links-background">
+
+            </div>
+
+            <button onclick="toggleMenu()" id="close-button" name="close-menu-button">
+                close
+            </button>
+            <div id="my-links">
+                <ul>
+                    <li class="my-links-li">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="my-links-li">
+                        <a href="recipes.html">Recipes</a>
+                    </li>
+                </ul>
             </div>
         </div>
         
@@ -137,4 +157,6 @@
     </main>
     
 </body>
+<script src="functions.js"></script>
+
 </html>

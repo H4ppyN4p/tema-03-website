@@ -6,6 +6,11 @@
     <title>Theme 3 website</title>
     <link rel="stylesheet" href="css/global.css">
 </head>
+
+<script>
+    console.log('hi there')
+</script>
+
 <body>
 
     <header>
@@ -13,10 +18,33 @@
         <div class="menu-content">  
             <h1>Low Spoon Foods</h1>
 
-            <div class="menu-box">
+            <button onclick="toggleMenu()" class="menu-box" name="menu-button">
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
+            </button>
+        </div>
+
+        <div id="hidden-items">
+            <div id="links-background">
+
+            </div>
+
+  
+            <div id="my-links">
+                <ul id="my-ul">
+                    <li class="my-links-li">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="my-links-li">
+                        <a href="recipes.html">Recipes</a>
+                    </li>
+                    <li>
+                        <button onclick="toggleMenu()" id="close-button" name="close-menu-button">
+                            X
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
         
@@ -35,18 +63,74 @@
 
                         </div>
 
-                        <div id="carousel-card-1" class="carousel-card">
+                        <article id="carousel-card-1"  class="carousel-card">
+                            <div class="carousel-card-image">
+                                <img src="imgs/pokebowl-homemade.jpg" 
+                                alt="a 'pokebowl', a bowl filled with rice, topped generously with edamami beans, avocado, mango, scallots and salmon">
+                            </div>
 
+                            <h3 class="carousel-card-header">New Recipe</h3>
+
+                            <div class="seperator-line-alt"></div>
+
+                            <p class="carousel-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum quos nemo eius magni nulla molestias qui nostrum sapiente error accusantium labore ab, maxime perspiciatis unde nam hic facere dignissimos sunt ad nobis! Ex repellat magnam totam impedit dolore at. Rem necessitatibus deserunt neque cumque, quo ab, magnam velit, aspernatur reprehenderit eos iure. Maiores quam consectetur distinctio, error molestias cum!</p>
+
+                            <button class="carousel-card-button">
+                                <p class="read-more-text">Read More</p>
+                            </button>
+                        </article>
+
+                        <article id="carousel-card-2" class="carousel-card">
+
+                            <div class="carousel-card-image">
+                                <img src="imgs/sushi-homemade.jpg" 
+                                alt="sushi, with salmon, avocado, cucumber and rice rolled in rice-paper">
+                            </div>
+
+                            <h3 class="carousel-card-header">New Recipe</h3>
+
+                            <div class="seperator-line-alt"></div>
+
+                            <p class="carousel-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum quos nemo eius magni nulla molestias qui nostrum sapiente error accusantium labore ab, maxime perspiciatis unde nam hic facere dignissimos sunt ad nobis! Ex repellat magnam totam impedit dolore at. Rem necessitatibus deserunt neque cumque, quo ab, magnam velit, aspernatur reprehenderit eos iure. Maiores quam consectetur distinctio, error molestias cum!</p>
+
+                            <button class="carousel-card-button">
+                                <p class="read-more-text">Read More</p>
+                            </button>
+                        </article>
+
+                        <article id="carousel-card-3" class="carousel-card">
+                            <div class="carousel-card-image">
+                                <img src="imgs/taco-homemade.jpg" 
+                                alt="a tace shell broken in two, both topped with sweet cream cheese, a few leaves of spinach, sweet potatoes, fried chicken, cheese and pickled red onions">
+                            </div>
+
+                            <h3 class="carousel-card-header">New Recipe</h3>
+
+                            <div class="seperator-line-alt"></div>
+
+                            <p class="carousel-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum quos nemo eius magni nulla molestias qui nostrum sapiente error accusantium labore ab, maxime perspiciatis unde nam hic facere dignissimos sunt ad nobis! Ex repellat magnam totam impedit dolore at. Rem necessitatibus deserunt neque cumque, quo ab, magnam velit, aspernatur reprehenderit eos iure. Maiores quam consectetur distinctio, error molestias cum!</p>
+
+                            <button class="carousel-card-button">
+                                <p class="read-more-text">Read More</p>
+                            </button>
+                        </article>
+
+                        <div id="carousel-nav-buttons">
+                            <button id="carousel-nav-button-1" class="carousel-nav-button" onclick="switchCarouselElement(id)" name="button-for-carousel-card-1">
+
+                            </button>
+
+                            <button id="carousel-nav-button-2" class="carousel-nav-button" onclick="switchCarouselElement(id)" name="button-for-carousel-card-2">
+
+                            </button>
+
+                            <button id="carousel-nav-button-3" class="carousel-nav-button" onclick="switchCarouselElement(id)" name="button-for-carousel-card-3">
+
+                            </button>
                         </div>
 
-                        <div id="carousel-card-2" class="carousel-card">
-
-                        </div>
-
-                        <div id="carousel-card-3" class="carousel-card">
-
-                        </div>
                     </div>
+
                 </section>
 
                 <section id="button-section">
@@ -89,4 +173,7 @@
     </main>
     
 </body>
+
+<script src="functions.js"></script>
+
 </html>

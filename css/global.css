@@ -6,9 +6,9 @@
     --blackish: #242733;
 }
 
-body {
-    background-color: var(--background);
-}
+
+/* Misc */
+
 
 * {
     margin: 0;
@@ -17,11 +17,35 @@ body {
     color: var(--blackish);
 }
 
+body {
+    background-color: var(--background);
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seperator-line {
+    width: 90%;
+    border: 2px solid var(--blackish);
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.seperator-line-alt {
+    width: 90%;
+    border: 1px solid var(--blackish);
+    margin: auto;
+}
 
 /* Header */
 
 header {
     padding: 20px 20px 0px 20px;
+    position: relative;
 }
 
 .menu-content {
@@ -46,12 +70,65 @@ header {
     border: 1px solid var(--blackish);
 }
 
-.seperator-line {
-    width: 90%;
-    border: 2px solid var(--blackish);
-    margin: auto;
-    margin-bottom: 40px;
+.my-links-li {
+    background-color: var(--main);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--blackish);
 }
+
+
+
+
+
+#hidden-items {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: 0;
+}
+
+#links-background {
+    background-color: var(--blackish);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 85%;
+}
+
+
+#my-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    width: 300px;
+    list-style-type: none;
+}
+
+#my-ul {
+    list-style-type: none;
+}
+
+#close-button {
+    position: absolute;
+    margin-top: 10px;
+    width: 10%;
+    font-size: 20px;
+    background-color: rgba(5, 5, 5, 0.0);
+    color: var(--main);
+    border: 1px solid var(--main);
+ 
+}
+
 
 
 /* Carousel Section */
@@ -60,20 +137,63 @@ header {
     height: 410px;
     width: 250px;
     background-color: var(--main);
-    border: 2px solid black;
+    position: relative;
+    padding: 0 1%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
+  
+}
+
+.carousel-card-image {
+    margin: auto;
+    margin-top: 2%;
+    height: 170px;
+}
+
+.carousel-card-header {
+    text-align: center;
+}
+
+.carousel-card-text {
+    margin-top: 5px;
+    color: var(--blackish);
+    height: 170px;
+    overflow: scroll;
+}
+
+.carousel-card-button {
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    background-color: var(--blackish);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -20px;
 }
 
 .cta-button {
     width: 230px;
     height: 60px;
     background-color: var(--main);
-    border: 1px solid black;
+    border: 1px solid var(--blackish);
     margin: 5px 0;
 }
 
 .cta-text {
     background-color: var(--main);
     font-size: 32px;
+}
+
+.carousel-nav-button {
+    width: 20px;
+    height: 20px;
+    background-color: var(--accent);
+    margin-left: 55px;
+    margin-right: 55px;
+    border-radius: 40px;
+
 }
 
 
@@ -89,6 +209,8 @@ header {
 
 #carousel {
     position: relative;
+    height: 480px;
+    border: 1px solid green;
 }
 
 #carousel-background {
@@ -96,28 +218,51 @@ header {
     height: 330px;
     width: 100%;
     position: absolute;
-
     top: 40px;
 }
 
 #carousel-card-1 {
     position: absolute;
-    left: -215px;
-    background-color: red;
+    left: inherit;
+    margin: auto;
+    left: 0;
+    right: 0;
+
 }
 
 #carousel-card-2 {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: -215px;
+    right: inherit;
     margin: auto;
+  
 }
+
 
 #carousel-card-3 {
     position: absolute;
-    right: -215px;
+    right: -215px;   
     margin: auto;
+
 }
+
+#carousel-nav-buttons {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    position: relative;
+    top: 437px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carousel-nav-button-1 {
+    background-color: var(--blackish);
+    border: 2px solid var(--accent);
+}
+
+/* button section */
 
 #button-section {
     width: 100%;
