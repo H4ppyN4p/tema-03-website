@@ -130,7 +130,7 @@ header {
 }
 
 
-
+/*** INDEX ***/
 /* Carousel Section */
 
 .carousel-card {
@@ -178,6 +178,8 @@ header {
     height: 60px;
     background-color: var(--main);
     border: 1px solid var(--blackish);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
+
     margin: 5px 0;
 }
 
@@ -199,7 +201,6 @@ header {
 
 #carousel-section {
     height: 520px;
-    border: 2px solid darkgreen;
     overflow-x: hidden;
 }
 
@@ -210,7 +211,6 @@ header {
 #carousel {
     position: relative;
     height: 480px;
-    border: 1px solid green;
 }
 
 #carousel-background {
@@ -271,13 +271,11 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
 }
 
 /* favourites section*/
 
 #favourites-section {
-    border: 2px solid darkblue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,10 +295,22 @@ header {
     height: 240px;
     width: 250px;
     background-color: var(--main);
-    border: 2px solid var(--blackish);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
     margin: 20px;
     margin-bottom: 30px;
     position: relative;
+}
+
+.favourites-header {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.favourites-image {
+    width: 95%;
+    height: 170px;
+    margin: auto;
+    margin-top: 5px;
 }
 
 .read-more-button {
@@ -322,6 +332,8 @@ header {
     color: var(--accent);  
 }
 
+
+/*** RECIPES ***/
 /* Searh recipes section */
 
 .recipes-sub-section {
@@ -376,7 +388,6 @@ header {
     padding-bottom: 20px;
     margin-bottom: 40px;
     position: relative;
-    border: 1px solid red;
 }
 
 #search-recipes-header {
@@ -418,14 +429,14 @@ header {
     height: 240px;
     width: 250px;
     background-color: var(--main);
-    border: 2px solid var(--blackish);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
+    
     margin: 20px;
     margin-bottom: 30px;
     position: relative;
 }
 
 #all-dishes-section {
-    border: 2px solid darkblue;
     justify-content: center;
     display: grid;
     grid-template-rows: 1fr;
@@ -435,3 +446,24 @@ header {
     text-align: center;
 }
 
+/*** RECIPE ***/
+/* name image section */
+
+#name-image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#name-image-subheader {
+    border-bottom: 1px solid var(--blackish);
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#name-image-image-container {
+    width: 280px;
+    height: 250px;
+}
