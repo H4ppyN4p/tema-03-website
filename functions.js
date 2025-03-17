@@ -70,7 +70,6 @@ function setCarouselButtonStyles(buttonId){
 function setCarouselCard(cardId){
     switch(cardId) {
         case 'carousel-card-1':
-            console.log(document.getElementById(cardId))
             document.getElementById(cardId).style.left = '0'
             document.getElementById(cardId).style.right = '0'
             document.getElementById(cardId).style.zIndex = '2'
