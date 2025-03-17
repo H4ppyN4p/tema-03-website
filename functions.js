@@ -12,6 +12,33 @@ function toggleMenu(){
     }
 }
 
+var idToSwitch = 1
+
+var timer = setInterval(autoSwitchCarousel, 4000)
+
+function autoSwitchCarousel(){
+
+
+    if (idToSwitch < 3) {
+        idToSwitch = idToSwitch +1
+    }  else {
+        idToSwitch = 1
+    }
+
+    switch(idToSwitch) {
+        case 1:
+            switchCarouselElement('carousel-nav-button-1')
+            break
+        case 2:
+            switchCarouselElement('carousel-nav-button-2')
+            break
+        case 3:
+            switchCarouselElement('carousel-nav-button-3')
+            break
+    }
+}
+
+
 function switchCarouselElement(buttonId){
 
     switch(buttonId) {
@@ -47,6 +74,11 @@ function setCarouselCard(cardId){
             document.getElementById(cardId).style.left = '0'
             document.getElementById(cardId).style.right = '0'
             document.getElementById(cardId).style.zIndex = '2'
+            idToSwitch = 1
+            clearInterval(timer)
+            timer = setInterval(autoSwitchCarousel, 4000)
+
+            
 
 
             document.getElementById('carousel-card-3').style.left = 'inherit'
@@ -66,6 +98,9 @@ function setCarouselCard(cardId){
             document.getElementById(cardId).style.left = '0'
             document.getElementById(cardId).style.right = '0'
             document.getElementById(cardId).style.zIndex = '2'
+            idToSwitch = 2
+            clearInterval(timer)
+            timer = setInterval(autoSwitchCarousel, 4000)
 
 
             document.getElementById('carousel-card-1').style.left = 'inherit'
@@ -83,6 +118,9 @@ function setCarouselCard(cardId){
             document.getElementById(cardId).style.left = '0'
             document.getElementById(cardId).style.right = '0'
             document.getElementById(cardId).style.zIndex = '2'
+            idToSwitch = 3
+            clearInterval(timer)
+            timer = setInterval(autoSwitchCarousel, 4000)
 
 
             document.getElementById('carousel-card-2').style.left = 'inherit'

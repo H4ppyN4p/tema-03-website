@@ -227,7 +227,6 @@ header {
     margin: auto;
     left: 0;
     right: 0;
-
 }
 
 #carousel-card-2 {
@@ -241,9 +240,10 @@ header {
 
 #carousel-card-3 {
     position: absolute;
+    left: inherit;
     right: -215px;   
     margin: auto;
-
+    
 }
 
 #carousel-nav-buttons {
