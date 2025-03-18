@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme 3 website</title>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/display.css">
 </head>
 
 <body>
@@ -12,7 +13,9 @@
     <header>
 
         <div class="menu-content">  
-            <h1>Low Spoon Foods</h1>
+            <a href="index.html">
+                <h1>Low Spoon Foods</h1>
+            </a>
 
             <button onclick="toggleMenu()" class="menu-box" aria-label="menu-button">
                 <div class="menu-line"></div>
@@ -51,7 +54,7 @@
     <main>
         <div class="grid_8-3">
             <div>
-                <section id="carousel-section">
+                <section id="carousel-section-phone">
                     <h2 id="carousel-header">New recipes</h2>
 
                     <div id="carousel">
@@ -71,9 +74,9 @@
 
                             <p class="carousel-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum quos nemo eius magni nulla molestias qui nostrum sapiente error accusantium labore ab, maxime perspiciatis unde nam hic facere dignissimos sunt ad nobis! Ex repellat magnam totam impedit dolore at. Rem necessitatibus deserunt neque cumque, quo ab, magnam velit, aspernatur reprehenderit eos iure. Maiores quam consectetur distinctio, error molestias cum!</p>
 
-                            <button class="carousel-card-button">
+                            <a class="carousel-card-button" href="recipe.html">
                                 <p class="read-more-text">Read More</p>
-                            </button>
+                            </a>
                         </article>
 
                         <article id="carousel-card-2" class="carousel-card">
@@ -89,9 +92,9 @@
 
                             <p class="carousel-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum quos nemo eius magni nulla molestias qui nostrum sapiente error accusantium labore ab, maxime perspiciatis unde nam hic facere dignissimos sunt ad nobis! Ex repellat magnam totam impedit dolore at. Rem necessitatibus deserunt neque cumque, quo ab, magnam velit, aspernatur reprehenderit eos iure. Maiores quam consectetur distinctio, error molestias cum!</p>
 
-                            <button class="carousel-card-button">
+                            <a class="carousel-card-button" href="recipe.html">
                                 <p class="read-more-text">Read More</p>
-                            </button>
+                            </a>
                         </article>
 
                         <article id="carousel-card-3" class="carousel-card">
@@ -106,9 +109,9 @@
 
                             <p class="carousel-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum quos nemo eius magni nulla molestias qui nostrum sapiente error accusantium labore ab, maxime perspiciatis unde nam hic facere dignissimos sunt ad nobis! Ex repellat magnam totam impedit dolore at. Rem necessitatibus deserunt neque cumque, quo ab, magnam velit, aspernatur reprehenderit eos iure. Maiores quam consectetur distinctio, error molestias cum!</p>
 
-                            <button class="carousel-card-button">
+                            <a class="carousel-card-button" href="recipe.html">
                                 <p class="read-more-text">Read More</p>
-                            </button>
+                            </a>
                         </article>
 
                         <div id="carousel-nav-buttons">
@@ -129,17 +132,105 @@
 
                 </section>
 
+                <section id="carousel-section-tablet">
+                    <h2 id="carousel-header">New recipes</h2>
+
+                    <div id="carousel">
+                        <div id="carousel-background">
+
+                        </div>
+
+                        <article id="carousel-card-1-tablet"  class="carousel-card">
+                            <div class="grid_6-4">
+                                <div class="carousel-card-image">
+                                    <img src="imgs/pokebowl-homemade-squooshed.webp" 
+                                    alt="a 'pokebowl', a bowl filled with rice, topped generously with edamami beans, avocado, mango, scallots and salmon">
+                                </div>
+                                <div>
+                                    <h3 class="carousel-card-header">Pokebowl</h3>
+
+                                    <div class="seperator-line-alt"></div>
+
+                                    <p class="carousel-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum quos nemo eius magni nulla molestias qui nostrum sapiente error accusantium labore ab, maxime perspiciatis unde nam hic facere dignissimos sunt ad nobis! Ex repellat magnam totam impedit dolore at. Rem necessitatibus deserunt neque cumque, quo ab, magnam velit, aspernatur reprehenderit eos iure. Maiores quam consectetur distinctio, error molestias cum!</p>
+
+                                    <a class="carousel-card-button" href="recipe.html">
+                                        <p class="read-more-text">Read More</p>
+                                    </a>
+                                </div>
+                        </div>
+                        </article>
+
+                        <article id="carousel-card-2-tablet" class="carousel-card">
+                            <div class="grid_6-4">
+                                <div class="carousel-card-image">
+                                    <img src="imgs/sushi-homemade-squooshed.webp" 
+                                    alt="sushi, with salmon, avocado, cucumber and rice rolled in rice-paper">
+                                </div>
+
+                                <div>
+                                    <h3 class="carousel-card-header">Sushi</h3>
+
+                                    <div class="seperator-line-alt"></div>
+
+                                    <p class="carousel-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum quos nemo eius magni nulla molestias qui nostrum sapiente error accusantium labore ab, maxime perspiciatis unde nam hic facere dignissimos sunt ad nobis! Ex repellat magnam totam impedit dolore at. Rem necessitatibus deserunt neque cumque, quo ab, magnam velit, aspernatur reprehenderit eos iure. Maiores quam consectetur distinctio, error molestias cum!</p>
+
+                                    <a class="carousel-card-button" href="recipe.html">
+                                        <p class="read-more-text">Read More</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="carousel-card-3-tablet" class="carousel-card">
+                            <div class="grid_6-4">
+                                <div class="carousel-card-image">
+                                    <img src="imgs/taco-homemade-squooshed.webp" 
+                                    alt="a tace shell broken in two, both topped with sweet cream cheese, a few leaves of spinach, sweet potatoes, fried chicken, cheese and pickled red onions">
+                                </div>
+
+                                <div>
+                                    <h3 class="carousel-card-header">Taco</h3>
+
+                                    <div class="seperator-line-alt"></div>
+
+                                    <p class="carousel-card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum quos nemo eius magni nulla molestias qui nostrum sapiente error accusantium labore ab, maxime perspiciatis unde nam hic facere dignissimos sunt ad nobis! Ex repellat magnam totam impedit dolore at. Rem necessitatibus deserunt neque cumque, quo ab, magnam velit, aspernatur reprehenderit eos iure. Maiores quam consectetur distinctio, error molestias cum!</p>
+
+                                    <a class="carousel-card-button" href="recipe.html">
+                                        <p class="read-more-text">Read More</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <div id="carousel-nav-buttons">
+                            <button id="carousel-nav-button-1-tablet" class="carousel-nav-button" onclick="switchCarouselElementTablet(id)" aria-label="button-for-carousel-card-1">
+
+                            </button>
+
+                            <button id="carousel-nav-button-2-tablet" class="carousel-nav-button" onclick="switchCarouselElementTablet(id)" aria-label="button-for-carousel-card-2">
+
+                            </button>
+
+                            <button id="carousel-nav-button-3-tablet" class="carousel-nav-button" onclick="switchCarouselElementTablet(id)" aria-label="button-for-carousel-card-3">
+
+                            </button>
+                        </div>
+
+                    </div>
+
+                </section>
+
                 <div class="seperator-line-alt"></div>
 
 
                 <section id="button-section">
-                    <button class="cta-button" id="recipes-button">
+                    <a class="cta-button" id="recipes-button" href="recipes.html">
                         <h2 class="cta-text">All Recipes</h2>
-                    </button>
+                    </A>
 
-                    <button class="cta-button" id="blog-button">
+                    <a class="cta-button" id="blog-button">
                         <h2 class="cta-text">Blog Posts</h2>
-                    </button>
+                    </a>
                 </section>
 
                 <div class="seperator-line-alt"></div>
@@ -159,9 +250,9 @@
 
                     <h3 class="favourites-header">Recipe Name</h3>
 
-                    <button class="read-more-button">
+                    <a class="read-more-button" href="recipe.html">
                         <p class="read-more-text">Read More</p>
-                    </button>
+                    </a>
                 </div>
 
                 <div class="favourites-card">
@@ -171,9 +262,9 @@
 
                     <h3 class="favourites-header">Recipe Name</h3>
 
-                    <button class="read-more-button">
+                    <a class="read-more-button" href="recipe.html">
                         <p class="read-more-text">Read More</p>
-                    </button>
+                    </a>
                 </div>
 
                 <div class="favourites-card">
@@ -183,9 +274,9 @@
 
                     <h3 class="favourites-header">Recipe Name</h3>
 
-                    <button class="read-more-button">
+                    <a class="read-more-button" href="recipe.html">
                         <p class="read-more-text">Read More</p>
-                    </button>
+                    </a>
                 </div>
             </section>
         </div>

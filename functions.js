@@ -1,20 +1,26 @@
 function toggleMenu(){
     var x = document.getElementById("hidden-items")
-    var y = document.getElementsByName("body")
 
     if (x.style.display === "block") {
         x.style.display = "none"
-        y.style.overflowY = "visible"
     } else {
         x.style.display = "block"
-        y.style.overflowY = "hidden"
 
     }
 }
 
+
+
+
+//Phone code
+
+var is_index = document.getElementById('carousel-nav-button-1')
+
 var idToSwitch = 1
 
-var timer = setInterval(autoSwitchCarousel, 4000)
+if (is_index != null ){
+    var timer = setInterval(autoSwitchCarousel, 4000)
+}
 
 function autoSwitchCarousel(){
 
@@ -131,6 +137,117 @@ function setCarouselCard(cardId){
             document.getElementById('carousel-card-1').style.right = 'inherit'
             document.getElementById('carousel-card-1').style.left = '-215px'
             document.getElementById('carousel-card-1').style.zIndex = '1'
+
+    }
+}
+
+
+// Tablet code
+var is_index_tablet = document.getElementById('carousel-nav-button-1-tablet')
+
+var idToSwitchTablet = 1
+
+if (is_index_tablet != null ){
+    var timer_tablet = setInterval(autoSwitchCarouselTablet, 4000)
+}
+
+function autoSwitchCarouselTablet(){
+
+    
+    if (idToSwitchTablet < 3) {
+        idToSwitchTablet = idToSwitchTablet +1
+    }  else {
+        idToSwitchTablet = 1
+    }
+
+    switch(idToSwitchTablet) {
+        case 1:
+            switchCarouselElementTablet('carousel-nav-button-1-tablet')
+            break
+        case 2:
+            switchCarouselElementTablet('carousel-nav-button-2-tablet')
+            break
+        case 3:
+            switchCarouselElementTablet('carousel-nav-button-3-tablet')
+            break
+    }
+}
+
+
+function switchCarouselElementTablet(buttonId){
+
+    switch(buttonId) {
+        case 'carousel-nav-button-1-tablet':
+            setCarouselCardTablet('carousel-card-1-tablet')
+            break
+
+        case 'carousel-nav-button-2-tablet':
+            setCarouselCardTablet('carousel-card-2-tablet')
+            break;
+
+        case 'carousel-nav-button-3-tablet':
+            setCarouselCardTablet('carousel-card-3-tablet')
+            break;
+    }
+
+    setCarouselButtonStylesTablet(buttonId)
+}
+
+function setCarouselButtonStylesTablet(buttonId){
+    document.getElementById('carousel-nav-button-1-tablet').style.backgroundColor = '#E2B961'
+    document.getElementById('carousel-nav-button-2-tablet').style.backgroundColor = '#E2B961'
+    document.getElementById('carousel-nav-button-3-tablet').style.backgroundColor = '#E2B961'
+
+    document.getElementById(buttonId).style.backgroundColor = '#242733'
+    document.getElementById(buttonId).style.border = '2px solid #E2B961'
+}
+
+function setCarouselCardTablet(cardId){
+    switch(cardId) {
+        case 'carousel-card-1-tablet':
+            document.getElementById(cardId).style.display = 'block'
+            idToSwitchTablet= 1
+            clearInterval(timer_tablet)
+            timer_tablet = setInterval(autoSwitchCarouselTablet, 4000)
+
+            
+
+
+            document.getElementById('carousel-card-3-tablet').style.display = 'none'
+            
+
+            document.getElementById('carousel-card-2-tablet').style.display = 'none'
+
+
+
+            break
+
+        case 'carousel-card-2-tablet':
+            document.getElementById(cardId).style.display = 'block'
+            idToSwitchTablet = 2
+            clearInterval(timer_tablet)
+            timer_tablet = setInterval(autoSwitchCarouselTablet, 4000)
+
+
+            document.getElementById('carousel-card-1-tablet').style.display = 'none'
+            
+
+            document.getElementById('carousel-card-3-tablet').style.display = 'none'
+
+            break
+
+        case 'carousel-card-3-tablet':
+            document.getElementById(cardId).style.display = 'block'
+            idToSwitchTablet = 3
+            clearInterval(timer_tablet)
+            timer_tablet = setInterval(autoSwitchCarouselTablet, 4000)
+
+
+            document.getElementById('carousel-card-2-tablet').style.display = 'none'
+
+            
+
+            document.getElementById('carousel-card-1-tablet').style.right = 'none'
 
     }
 }

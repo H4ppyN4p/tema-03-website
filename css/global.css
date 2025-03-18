@@ -17,9 +17,15 @@
     color: var(--blackish);
 }
 
+
+
 body {
     background-color: var(--background);
     height: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 img {
@@ -41,429 +47,1004 @@ img {
     margin: auto;
 }
 
+.seperator-line-recipe {
+    width: 90%;
+    border: 1px solid var(--blackish);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 799px) {
 /* Header */
 
-header {
-    padding: 20px 20px 0px 20px;
-    position: relative;
-}
+    header {
+        padding: 20px 20px 0px 20px;
+        position: relative;
+    }
 
-.menu-content {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
-}
+    .menu-content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
 
-.menu-box {
-    width: 40px;
-    height: 35px;
-    background-color: var(--accent);
-    border: 1px solid var(--blackish);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column
-}
+    .menu-box {
+        width: 40px;
+        height: 35px;
+        background-color: var(--accent);
+        border: 1px solid var(--blackish);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column
+    }
 
-.menu-line {
-    width: 80%;
-    border: 1px solid var(--blackish);
-}
+    .menu-line {
+        width: 80%;
+        border: 1px solid var(--blackish);
+    }
 
-.my-links-li {
-    background-color: var(--main);
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid var(--blackish);
-}
-
-
+    .my-links-li {
+        background-color: var(--main);
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid var(--blackish);
+    }
 
 
 
-#hidden-items {
-    display: none;
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    right: 0;
-}
-
-#links-background {
-    background-color: var(--blackish);
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 85%;
-}
 
 
-#my-links {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    right: 0;
-    top: 0;
-    z-index: 3;
-    width: 300px;
-    list-style-type: none;
-}
+    #hidden-items {
+        display: none;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        right: 0;
+    }
 
-#my-ul {
-    list-style-type: none;
-}
-
-#close-button {
-    position: absolute;
-    margin-top: 10px;
-    width: 10%;
-    font-size: 20px;
-    background-color: rgba(5, 5, 5, 0.0);
-    color: var(--main);
-    border: 1px solid var(--main);
- 
-}
+    #links-background {
+        background-color: var(--blackish);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 85%;
+    }
 
 
-/*** INDEX ***/
-/* Carousel Section */
+    #my-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        z-index: 3;
+        width: 300px;
+        list-style-type: none;
+    }
 
-.carousel-card {
-    height: 410px;
-    width: 250px;
-    background-color: var(--main);
-    position: relative;
-    padding: 0 1%;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
-  
-}
+    #my-ul {
+        list-style-type: none;
+    }
 
-.carousel-card-image {
-    margin: auto;
-    margin-top: 2%;
-    height: 170px;
-}
-
-.carousel-card-header {
-    text-align: center;
-}
-
-.carousel-card-text {
-    margin-top: 5px;
-    color: var(--blackish);
-    height: 170px;
-    overflow: scroll;
-}
-
-.carousel-card-button {
-    position: absolute;
-    width: 160px;
-    height: 40px;
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    background-color: var(--blackish);
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: -20px;
-}
-
-.cta-button {
-    width: 230px;
-    height: 60px;
-    background-color: var(--main);
-    border: 1px solid var(--blackish);
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
-
-    margin: 5px 0;
-}
-
-.cta-text {
-    background-color: var(--main);
-    font-size: 32px;
-}
-
-.carousel-nav-button {
-    width: 20px;
-    height: 20px;
-    background-color: var(--accent);
-    margin-left: 55px;
-    margin-right: 55px;
-    border-radius: 40px;
-
-}
-
-
-#carousel-section {
-    height: 520px;
-    overflow-x: hidden;
-}
-
-#carousel-header {
-    text-align: center;
-}
-
-#carousel {
-    position: relative;
-    height: 480px;
-}
-
-#carousel-background {
-    background-color: var(--dark);
-    height: 330px;
-    width: 100%;
-    position: absolute;
-    top: 40px;
-}
-
-#carousel-card-1 {
-    position: absolute;
-    left: inherit;
-    margin: auto;
-    left: 0;
-    right: 0;
-}
-
-#carousel-card-2 {
-    position: absolute;
-    left: -215px;
-    right: inherit;
-    margin: auto;
-  
-}
-
-
-#carousel-card-3 {
-    position: absolute;
-    left: inherit;
-    right: -215px;   
-    margin: auto;
+    #close-button {
+        position: absolute;
+        margin-top: 10px;
+        width: 10%;
+        font-size: 20px;
+        background-color: rgba(5, 5, 5, 0.0);
+        color: var(--main);
+        border: 1px solid var(--main);
     
-}
-
-#carousel-nav-buttons {
-    width: 100%;
-    height: 40px;
-    margin: auto;
-    position: relative;
-    top: 437px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#carousel-nav-button-1 {
-    background-color: var(--blackish);
-    border: 2px solid var(--accent);
-}
-
-/* button section */
-
-#button-section {
-    width: 100%;
-    height: 200px;
-    display: flex;  
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* favourites section*/
-
-#favourites-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-#favourites-background {
-    position: absolute;
-    margin-top: 100px;
-    width: 190px;
-    height: 700px;
-    background-color: var(--dark);
-
-}
-
-.favourites-card {
-    height: 240px;
-    width: 250px;
-    background-color: var(--main);
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
-    margin: 20px;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.favourites-header {
-    text-align: center;
-    margin-top: 5px;
-}
-
-.favourites-image {
-    width: 95%;
-    height: 170px;
-    margin: auto;
-    margin-top: 5px;
-}
-
-.read-more-button {
-    width: 157px;
-    height: 40px;
-    background-color: var(--blackish);
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 220px;
-    margin: auto;
-}
-
-.read-more-text {
-    background-color: var(--blackish);
-    font-size: 24px;
-    color: var(--accent);  
-}
+    }
 
 
-/*** RECIPES ***/
-/* Searh recipes section */
+    /*** INDEX ***/
+    /* Carousel Section */
 
-.recipes-sub-section {
-    margin: 20px 0;
-}
-
-.recipes-sub-header {
-    text-align: center;
-}
-
-.recipes-checkbox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--blackish);
-    color: var(--accent);
-    width: 60%;
-    height: 30px;
-    margin: auto;
-    margin-bottom: 3px;
-}
-
-.recipes-checkbox, p {
-    color: var(--accent);
-    padding-left: 5px;
-}
-
-.checkbox-box {
-    border: 3px solid var(--accent);
-    background-color: var(--main);
-    margin-right: 10px;
-}
-
-.recipes-input {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--blackish);
-    color: var(--accent);
-    width: 60%;
-    height: 30px;
-    margin: auto;
-    margin-bottom: 3px;
-}
-
-
-
-#search-recipes-section{
-    background-color: var(--dark);
-    width: 90%;
-    margin: auto;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-#search-recipes-header {
-    text-align: center;
-    background-color: var(--dark);
-}
-
-#recipes-section-button {
-    width: 157px;
-    height: 40px;
-    background-color: var(--blackish);
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 490px;
-    margin: auto;
-}
-
-/* All dishes section */
-
-.dishes-sub-section {
-    position: relative;
-}
-
-.dishes-background {
-    position: absolute;
-    width: 190px;
-    height: 400px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 100px;
-    background-color: var(--dark);
-}
-
-.dishes-card {
-    height: 240px;
-    width: 250px;
-    background-color: var(--main);
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
     
-    margin: 20px;
-    margin-bottom: 30px;
-    position: relative;
-}
+    #carousel-header {
+        text-align: center;
+    }
 
-#all-dishes-section {
-    justify-content: center;
-    display: grid;
-    grid-template-rows: 1fr;
-}
+    .carousel-card {
+        height: 410px;
+        width: 250px;
+        background-color: var(--main);
+        position: relative;
+        padding: 0 1%;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
+        border: 1px solid var(--dark);
+    }
 
-#all-dishes-header {
-    text-align: center;
-}
+    .carousel-card-image {
+        margin: auto;
+        margin-top: 2%;
+        height: 170px;
+    }
 
-/*** RECIPE ***/
-/* name image section */
+    .carousel-card-header {
+        text-align: center;
+    }
 
-#name-image-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    .carousel-card-text {
+        margin-top: 5px;
+        color: var(--blackish);
+        height: 170px;
+        overflow: scroll;
+    }
 
-#name-image-subheader {
-    border-bottom: 1px solid var(--blackish);
-    width: 200px;
-    margin-bottom: 20px;
-    text-align: center;
-}
+    .carousel-card-button {
+        position: absolute;
+        width: 160px;
+        height: 40px;
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        background-color: var(--blackish);
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: -20px;
 
-#name-image-image-container {
-    width: 280px;
-    height: 250px;
-}
+    }
+
+    .read-more-text {
+        background-color: var(--blackish);
+        font-size: 24px;
+        color: var(--accent);  
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .cta-button {
+        width: 230px;
+        height: 60px;
+        background-color: var(--main);
+        border: 1px solid var(--dark);
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
+
+        margin: 5px 0;
+    }
+
+    .cta-text {
+        background-color: var(--main);
+        font-size: 32px;
+        text-align: center;
+        padding-top: 11px;
+    }
+
+    .carousel-nav-button {
+        width: 20px;
+        height: 20px;
+        background-color: var(--accent);
+        margin-left: 55px;
+        margin-right: 55px;
+        border-radius: 40px;
+        cursor: pointer;
+
+    }
+
+    #carousel-section-phone {
+        height: 520px;
+        overflow-x: hidden;
+    }
+
+    #carousel-section-tablet {
+        display: none;
+    }
+
+
+    #carousel {
+        position: relative;
+        height: 480px;
+    }
+
+    #carousel-background {
+        background-color: var(--dark);
+        height: 330px;
+        width: 100%;
+        position: absolute;
+        top: 40px;
+    }
+
+    #carousel-card-1 {
+        position: absolute;
+        left: inherit;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    #carousel-card-2 {
+        position: absolute;
+        left: -215px;
+        right: inherit;
+        margin: auto;
+    
+    }
+
+
+    #carousel-card-3 {
+        position: absolute;
+        left: inherit;
+        right: -215px;   
+        margin: auto;
+        
+    }
+
+    #carousel-nav-buttons {
+        width: 100%;
+        height: 40px;
+        margin: auto;
+        position: relative;
+        top: 437px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #carousel-nav-button-1 {
+        background-color: var(--blackish);
+        border: 2px solid var(--accent);
+    }
+
+    /* button section */
+
+    #button-section {
+        width: 100%;
+        height: 200px;
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* favourites section*/
+
+    #favourites-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    #favourites-background {
+        position: absolute;
+        margin-top: 100px;
+        width: 100px;
+        height: 700px;
+        background-color: var(--dark);
+
+    }
+
+    .favourites-card {
+        height: 240px;
+        width: 250px;
+        background-color: var(--main);
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
+        margin: 20px;
+        margin-bottom: 50px;
+        position: relative;
+        border: 1px solid var(--dark);
+    }
+
+    .favourites-header {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .favourites-image {
+        width: 95%;
+        height: 170px;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .read-more-button {
+        width: 157px;
+        height: 40px;
+        background-color: var(--blackish);
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 220px;
+        margin: auto;
+    }
+
+
+
+
+    /*** RECIPES ***/
+    /* Searh recipes section */
+
+    .recipes-sub-section {
+        margin: 20px 0;
+    }
+
+    .recipes-sub-header {
+        text-align: center;
+    }
+
+    .recipes-checkbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--blackish);
+        color: var(--accent);
+        width: 60%;
+        height: 30px;
+        margin: auto;
+        margin-bottom: 3px;
+    }
+
+    .recipes-checkbox, p {
+        color: var(--accent);
+        padding-left: 5px;
+    }
+
+    .checkbox-box {
+        border: 3px solid var(--accent);
+        background-color: var(--main);
+        margin-right: 10px;
+    }
+
+    .recipes-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--blackish);
+        color: var(--accent);
+        width: 60%;
+        height: 30px;
+        margin: auto;
+        margin-bottom: 3px;
+    }
+
+
+
+    #search-recipes-section{
+        background-color: var(--dark);
+        width: 90%;
+        margin: auto;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    #search-recipes-header {
+        text-align: center;
+        background-color: var(--dark);
+    }
+
+    #recipes-section-button {
+        width: 157px;
+        height: 40px;
+        background-color: var(--blackish);
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 490px;
+        margin: auto;
+    }
+
+    /* All dishes section */
+
+    .dishes-sub-section {
+        position: relative;
+    }
+
+    .dishes-background {
+        position: absolute;
+        width: 100px;
+        height: 400px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 100px;
+        background-color: var(--dark);
+    }
+
+    .dishes-card {
+        height: 240px;
+        width: 250px;
+        background-color: var(--main);
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
+        margin: 20px;
+        margin-bottom: 70px;
+        position: relative;
+    }
+
+    #all-dishes-section {
+        justify-content: center;
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    #all-dishes-header {
+        text-align: center;
+    }
+
+    /*** RECIPE ***/
+    /* name image section */
+
+    #name-image-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #name-image-subheader {
+        border-bottom: 1px solid var(--blackish);
+        width: 200px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #name-image-image-container {
+        width: 280px;
+        height: 250px;
+        position: relative;
+    }
+
+    #image-box-shadow {
+        width: 100%;
+        height: 100%;
+        box-shadow:  0px 0px 5px 5px inset var(--background);
+        position: absolute;
+        top: 0;
+    }
+
+
+    /* recipe section*/
+
+    .recipe-sub-section {
+        padding-left: 10%;
+    }
+
+    .ingredients-sub-part {
+        padding-top: 12px;
+    }
+
+    .ingredients-list {
+        padding-left: 10px;
+    }
+
+    .ingredients-list, li {
+        padding: 3px 0;
+    }
+
+    .method-list {
+        padding-left: 10px;
+    }
+
+    .method-list, li {
+        padding: 5px 0;
+    }
+
+
+    #recipe-section {
+        background-color: var(--main);
+        width: 340px;
+        margin: auto;
+        margin-top: 50px;
+        padding-top: 15px;
+    }
+
+    #recipe-practical-information {
+        width: 150px;
+        background-color: var(--dark);
+        padding: 5px;
+        margin: auto;
+    }
+} 
+
+@media (width >= 800px) {
+    /* Header */
+
+    header {
+        padding: 20px 20px 0px 20px;
+        position: relative;
+        background-color: red;
+    }
+
+    .menu-content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
+    .menu-box {
+        width: 40px;
+        height: 35px;
+        background-color: var(--accent);
+        border: 1px solid var(--blackish);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column
+    }
+
+    .menu-line {
+        width: 80%;
+        border: 1px solid var(--blackish);
+    }
+
+    .my-links-li {
+        background-color: var(--main);
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid var(--blackish);
+    }
+
+
+
+
+
+    #hidden-items {
+        display: none;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        right: 0;
+    }
+
+    #links-background {
+        background-color: var(--blackish);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 85%;
+    }
+
+
+    #my-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        z-index: 3;
+        width: 300px;
+        list-style-type: none;
+    }
+
+    #my-ul {
+        list-style-type: none;
+    }
+
+    #close-button {
+        position: absolute;
+        margin-top: 10px;
+        width: 10%;
+        font-size: 20px;
+        background-color: rgba(5, 5, 5, 0.0);
+        color: var(--main);
+        border: 1px solid var(--main);
+    
+    }
+
+
+    /*** INDEX ***/
+    /* Carousel Section */
+
+    .carousel-card {
+        height: 410px;
+        width: 90%;
+        background-color: var(--main);
+        position: relative;
+        padding: 0 1%;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
+        border: 1px solid var(--dark);
+    }
+
+    .carousel-card-image {
+        margin: auto;
+        margin-top: 2%;
+        width: 100%;
+        height: 370px;
+    }
+
+    .carousel-card-header {
+        text-align: center;
+    }
+
+    .carousel-card-text {
+        margin-top: 5px;
+        color: var(--blackish);
+        height: 100%;
+        overflow: scroll;
+    }
+
+    .carousel-card-button {
+        position: absolute;
+        width: 160px;
+        height: 40px;
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        background-color: var(--blackish);
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+
+    }
+
+    .read-more-text {
+        background-color: var(--blackish);
+        font-size: 24px;
+        color: var(--accent);  
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .cta-button {
+        width: 230px;
+        height: 60px;
+        background-color: var(--main);
+        border: 1px solid var(--dark);
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
+
+        margin: 5px 0;
+    }
+
+    .cta-text {
+        background-color: var(--main);
+        font-size: 32px;
+        text-align: center;
+        padding-top: 11px;
+    }
+
+    .carousel-nav-button {
+        width: 20px;
+        height: 20px;
+        background-color: var(--accent);
+        margin-left: 55px;
+        margin-right: 55px;
+        border-radius: 40px;
+        cursor: pointer;
+
+    }
+
+    #carousel-section-phone {
+        height: 540px;
+        overflow-x: hidden;
+        border: 2px solid var();
+        display: none
+    }
+
+    #carousel-section-tablet {
+        height: 540px;
+        overflow-x: hidden;
+        border: 2px solid var();
+    }
+
+    #carousel-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #carousel {
+        position: relative;
+        height: 480px;
+    }
+
+    #carousel-background {
+        background-color: var(--dark);
+        height: 330px;
+        width: 100%;
+        position: absolute;
+        top: 40px;
+    }
+
+    #carousel-card-1-tablet {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    #carousel-card-2-tablet {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    
+    }
+
+
+    #carousel-card-3-tablet {
+        position: absolute;
+        left: 0;
+        right: 0;   
+        margin: auto;
+        
+    }
+
+    #carousel-nav-buttons {
+        width: 100%;
+        height: 40px;
+        margin: auto;
+        position: relative;
+        top: 437px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #carousel-nav-button-1-tablet {
+        background-color: var(--blackish);
+        border: 2px solid var(--accent);
+    }
+
+    /* button section */
+
+    #button-section {
+        width: 100%;
+        height: 200px;
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* favourites section*/
+
+    #favourites-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    #favourites-background {
+        position: absolute;
+        margin-top: 100px;
+        width: 100px;
+        height: 700px;
+        background-color: var(--dark);
+
+    }
+
+    .favourites-card {
+        height: 240px;
+        width: 250px;
+        background-color: var(--main);
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
+        margin: 20px;
+        margin-bottom: 50px;
+        position: relative;
+        border: 1px solid var(--dark);
+    }
+
+    .favourites-header {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .favourites-image {
+        width: 95%;
+        height: 170px;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .read-more-button {
+        width: 157px;
+        height: 40px;
+        background-color: var(--blackish);
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 220px;
+        margin: auto;
+    }
+
+
+
+
+    /*** RECIPES ***/
+    /* Searh recipes section */
+
+    .recipes-sub-section {
+        margin: 20px 0;
+    }
+
+    .recipes-sub-header {
+        text-align: center;
+    }
+
+    .recipes-checkbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--blackish);
+        color: var(--accent);
+        width: 60%;
+        height: 30px;
+        margin: auto;
+        margin-bottom: 3px;
+    }
+
+    .recipes-checkbox, p {
+        color: var(--accent);
+        padding-left: 5px;
+    }
+
+    .checkbox-box {
+        border: 3px solid var(--accent);
+        background-color: var(--main);
+        margin-right: 10px;
+    }
+
+    .recipes-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--blackish);
+        color: var(--accent);
+        width: 60%;
+        height: 30px;
+        margin: auto;
+        margin-bottom: 3px;
+    }
+
+
+
+    #search-recipes-section{
+        background-color: var(--dark);
+        width: 90%;
+        margin: auto;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    #search-recipes-header {
+        text-align: center;
+        background-color: var(--dark);
+    }
+
+    #recipes-section-button {
+        width: 157px;
+        height: 40px;
+        background-color: var(--blackish);
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 490px;
+        margin: auto;
+    }
+
+    /* All dishes section */
+
+    .dishes-sub-section {
+        position: relative;
+    }
+
+    .dishes-background {
+        position: absolute;
+        width: 400px;
+        height: 100px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 100px;
+        background-color: var(--dark);
+    }
+
+    .dishes-card {
+        height: 240px;
+        width: 250px;
+        background-color: var(--main);
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
+        margin: 20px;
+        margin-bottom: 70px;
+        position: relative;
+    }
+
+    #all-dishes-section {
+        justify-content: center;
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    #all-dishes-header {
+        text-align: center;
+    }
+
+    /*** RECIPE ***/
+    /* name image section */
+
+    #name-image-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #name-image-subheader {
+        border-bottom: 1px solid var(--blackish);
+        width: 200px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #name-image-image-container {
+        width: 100%;
+        max-height: 400px;
+        position: relative;
+    }
+
+    #image-box-shadow {
+        width: 100%;
+        height: 100%;
+        box-shadow:  0px 0px 5px 5px inset var(--background);
+        position: absolute;
+        top: 0;
+    }
+
+
+    /* recipe section*/
+
+    .recipe-sub-section {
+        padding-left: 10%;
+    }
+
+    .ingredients-sub-part {
+        padding-top: 12px;
+    }
+
+    .ingredients-list {
+        padding-left: 10px;
+    }
+
+    .ingredients-list, li {
+        padding: 3px 0;
+    }
+
+    .method-list {
+        padding-left: 10px;
+    }
+
+    .method-list, li {
+        padding: 5px 0;
+    }
+
+
+    #recipe-section {
+        background-color: var(--main);
+        width: 95%;
+        margin: auto;
+        margin-top: 50px;
+        padding-top: 15px;
+    }
+
+    #recipe-practical-information {
+        width: 150px;
+        background-color: var(--dark);
+        padding: 5px;
+        margin: auto;
+    }
+} 

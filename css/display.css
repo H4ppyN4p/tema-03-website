@@ -1,0 +1,39 @@
+.grid_5-1 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.grid_1-1-recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (width >= 800px ) {
+
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid_3-5 {
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+    }
+
+    .grid_6-4 {
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+    }
+
+    .grid_8-3 {
+        display: grid;
+        grid-template-columns: 8fr 3fr;
+    }
+
+
+}   
