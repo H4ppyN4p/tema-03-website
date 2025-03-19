@@ -6,8 +6,20 @@
     --blackish: #242733;
 }
 
+@font-face {
+    font-family: inter;
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: arvo;
+    src: url(../fonts/Arvo/Arvo-Regular.ttf);
+}
+
 
 /* Misc */
+
+
 
 
 * {
@@ -16,6 +28,18 @@
     box-sizing: border-box;
     color: var(--blackish);
 }
+
+h1, h2, h3, h4 {
+    font-family: inter;
+}
+
+p, a {
+    font-family: arvo;
+}
+
+
+
+
 
 
 
@@ -57,7 +81,29 @@ img {
 
 
 
-@media (max-width: 799px) {
+@media (max-width: 999px) {
+
+/* Font sizes */
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+}
+
 /* Header */
 
     header {
@@ -165,22 +211,33 @@ img {
         border: 1px solid var(--dark);
     }
 
-    .carousel-card-image {
-        margin: auto;
-        margin-top: 2%;
-        height: 170px;
+    .carousel-container {
+        width: 100%; 
+        height: 90%; 
+        display: grid;
+
     }
 
-    .carousel-card-header {
-        text-align: center;
+ 
+
+    .carousel-text-box {
+        height: 100%;
+        color: var(--blackish);
+        padding: 20px 20px 0 20px;
+        overflow: scroll;
     }
+
+    .carousel-img {
+        /* at 800-1000px make it so it's object-fit: contain */
+        object-fit: cover;
+        padding: 5px 5px 0 5px;
+    }   
 
     .carousel-card-text {
         margin-top: 5px;
         color: var(--blackish);
-        height: 170px;
-        overflow: scroll;
     }
+
 
     .carousel-card-button {
         position: absolute;
@@ -551,13 +608,34 @@ img {
     }
 } 
 
-@media (width >= 800px) {
+@media (width >= 1000px) {
+    
+    /* Font sizes */
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
     /* Header */
 
     header {
         padding: 20px 20px 0px 20px;
         position: relative;
-        background-color: red;
     }
 
     .menu-content {
@@ -646,32 +724,46 @@ img {
     /* Carousel Section */
 
     .carousel-card {
+        box-sizing: border-box;
         height: 410px;
         width: 90%;
         background-color: var(--main);
         position: relative;
-        padding: 0 1%;
+        padding: 0 5%;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.03);
         border: 1px solid var(--dark);
     }
 
-    .carousel-card-image {
-        margin: auto;
-        margin-top: 2%;
-        width: 100%;
-        height: 370px;
+    .carousel-container {
+        width: 100%; 
+        height: 90%; 
+        display: grid;
+
     }
 
-    .carousel-card-header {
-        text-align: center;
+ 
+
+    .carousel-text-box {
+        height: 100%;
+        color: var(--blackish);
+        padding: 20px 20px 0 20px;
+        overflow: scroll;
     }
+
+    .carousel-img {
+        /* at 800-1000px make it so it's object-fit: contain */
+        object-fit: cover;
+        padding: 20px 20px 0 20px;
+    }   
 
     .carousel-card-text {
         margin-top: 5px;
         color: var(--blackish);
-        height: 100%;
-        overflow: scroll;
     }
+
+
+  
+
 
     .carousel-card-button {
         position: absolute;
@@ -721,6 +813,10 @@ img {
         border-radius: 40px;
         cursor: pointer;
 
+    }
+
+    #carousel-button-section {
+        padding: 50px;
     }
 
     #carousel-section-phone {
@@ -982,6 +1078,7 @@ img {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
     }
 
     #name-image-subheader {
@@ -1047,4 +1144,11 @@ img {
         padding: 5px;
         margin: auto;
     }
+
+
+
+    /* Testing */
+  
+
 } 
+
