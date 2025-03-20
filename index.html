@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme 3 website</title>
+    <link rel="icon" type="image/x-icon" href="imgs/spoon-solid.svg">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/display.css">
 </head>
@@ -13,7 +14,7 @@
     <header>
 
         <div class="menu-content">  
-            <a href="index.html">
+            <a id="site-header" href="index.html">
                 <h1>Low Spoon Foods</h1>
             </a>
 
@@ -22,6 +23,17 @@
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
             </button>
+
+            <div id="tablet-menu">
+                <ul class="my-ul">
+                    <li class="my-links-li active-link" >
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="my-links-li">
+                        <a href="recipes.html">Recipes</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div id="hidden-items">
@@ -31,8 +43,8 @@
 
   
             <div id="my-links">
-                <ul id="my-ul">
-                    <li class="my-links-li">
+                <ul class="my-ul">
+                    <li class="my-links-li active-link">
                         <a href="index.html">Home</a>
                     </li>
                     <li class="my-links-li">
@@ -64,7 +76,7 @@
 
                         <article id="carousel-card-1"  class="carousel-card">
                             <div class="grid_6-4 carousel-container">
-                                <img class="carousel-img"src="imgs/pokebowl-homemade-squooshed.webp" 
+                                <img class="carousel-img" src="imgs/pokebowl-homemade-squooshed.webp" 
                                 alt="a 'pokebowl', a bowl filled with rice, topped generously with edamami beans, avocado, mango, scallots and salmon">
                            
                                 <div class="carousel-text-box">

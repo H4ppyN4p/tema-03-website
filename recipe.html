@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Theme 3 website</title>
+        <link rel="icon" type="image/x-icon" href="imgs/spoon-solid.svg">
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/display.css">
 
@@ -13,7 +14,7 @@
         <header>
 
             <div class="menu-content">  
-                <a href="index.html">
+                <a id="site-header" href="index.html">
                     <h1>Low Spoon Foods</h1>
                 </a>
     
@@ -22,6 +23,17 @@
                     <div class="menu-line"></div>
                     <div class="menu-line"></div>
                 </button>
+    
+                <div id="tablet-menu">
+                    <ul class="my-ul">
+                        <li class="my-links-li" >
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="my-links-li">
+                            <a href="recipes.html">Recipes</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
     
             <div id="hidden-items">
@@ -31,7 +43,7 @@
     
       
                 <div id="my-links">
-                    <ul id="my-ul">
+                    <ul class="my-ul">
                         <li class="my-links-li">
                             <a href="index.html">Home</a>
                         </li>
@@ -47,149 +59,151 @@
                 </div>
             </div>
             
-            <!--- <div class="seperator-line-recipe"></div> --->
-
+            <div class="seperator-line"></div>
             
         </header>
 
         <main>
             <div class="grid_3-5">
                 <section id="name-image-section">
-                    <h2>Recipe:</h2>
-                    <h3 id="name-image-subheader">Recipe name</h3>
-                    
+                    <div id="name-image-header-section">
+                        <h2>Recipe:</h2>
+                        <h3 id="name-image-subheader">Recipe name</h3>
+                    </div>
 
                     <div id="name-image-image-container">
                   
                         <img id="name-image-image" src="imgs/pokebowl-homemade-squooshed.webp" 
                         alt="a 'pokebowl', a bowl filled with rice, topped generously with edamami beans, avocado, mango, scallots and salmon">
                         <div id="image-box-shadow">
-
+    
                         </div>
                     </div> 
                 </section>
 
+
                 <section id="recipe-section">
+                    <div id="recipe-section-container">
 
-                    <div id="recipe-practical-information">
-                        <dl class="grid_1-1-recipe">
-                            <dt>Time</dt>
-                            <dd>30 min</dd>
+                        <div id="recipe-practical-information">
+                            <dl class="grid_1-1-recipe">
+                                <dt>Time</dt>
+                                <dd>30 min</dd>
 
-                            <dt>Utilities:</dt>
-                            <dd>4</dd>
+                                <dt>Utilities:</dt>
+                                <dd>4</dd>
 
-                            <dt>Serves:</dt>
-                            <dd>2</dd>
-                        </dl>
-                    </div>
-
-                    <!--- <div class="seperator-line-recipe"></div> --->
-
-                    <div id="recipe-ingredients-method" class="grid_3-5">
-                        <section class="recipe-sub-section">
-
-                            <h3>Ingredients</h3>
-                            <div class="ingredients-sub-part">
-                                <h4>Part 1 of 2</h4>
-                                <ul class="ingredients-list">
-                                    <li>Bacon</li>
-                                    <li>1 tsp butter</li>
-                                    <li>2 æg yolks</li>
-                                    <li>50 gram parmesan</li>
-                                    <li>Black pebber, freshly ground</li>
-                                </ul>
-                            </div>
-
-                            
-                            <div class="ingredients-sub-part">
-                                <h4>Part 2 of 2</h4>
-                                <ul class="ingredients-list">
-                                    <li>250 gram spaghetti</li>
-                                    <li>50 gram parmesan</li>
-                                </ul>
-                            </div>
-                        </section>
-
-
-                        <section class="recipe-sub-section">
-                            <h3>Method</h3>
-
-                            <div>
-                                <div>
-                                    <ol class="method-list">
-                                        <li>
-                                            <div class="grid_5-1">
-                                                <div>
-                                                    Mix 50gram of parmesan together with egg yolks in a bowel, then set aside.
-                                                </div>
-                                                <label class="container">
-                                                    <input type="checkbox" >
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="grid_5-1">
-                                                <div>
-                                                Boil the pasta al dente; reference your pack for how long the pasta needs.
-                                                </div>
-                                                <label class="container">
-                                                    <input type="checkbox" >
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="grid_5-1"> 
-                                                <div>
-                                                Cut up the bacon in thinner pices. While the pasta is boiling, fry the bacon on a pan at high temperature until it start getting crispy, but is still somewhat chewy.
-                                                </div>
-                                                <label class="container">
-                                                    <input type="checkbox" >
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div class="grid_5-1">
-                                        </li>
-                                        <li>
-                                            <div class="grid_5-1">
-                                                <div>
-                                                Once the pasta is done pull it off the heat. Save a bit of pasta water and drain the rest.
-                                                </div>
-                                                <label class="container">
-                                                    <input type="checkbox" >
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="grid_5-1">
-                                                <div>
-                                                Add pasta to the frying pan, take it off the heat, then add the egg and parmesan mix. Stir in the pan while adding a bit of pasta water.
-                                                </div>
-                                                <label class="container">
-                                                    <input type="checkbox" >
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="grid_5-1">
-                                                <div>
-                                                    Top with additional parmesan cheese, add plenty of black pebber and serve
-                                                </div>  
-                                                <label class="container">
-                                                    <input type="checkbox" >
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                    </ol>
+                                <dt>Serves:</dt>
+                                <dd>2</dd>
+                            </dl>
+                        </div> 
+                        <div id="recipe-ingredients-method" class="grid_3-5">
+                            <section class="recipe-sub-section">
+    
+                                <h3>Ingredients</h3>
+                                <div class="ingredients-sub-part">
+                                    <h4>Part 1 of 2</h4>
+                                    <ul class="ingredients-list">
+                                        <li>Bacon</li>
+                                        <li>1 tsp butter</li>
+                                        <li>2 æg yolks</li>
+                                        <li>50 gram parmesan</li>
+                                        <li>Black pebber, freshly ground</li>
+                                    </ul>
                                 </div>
+    
+                                
+                                <div class="ingredients-sub-part">
+                                    <h4>Part 2 of 2</h4>
+                                    <ul class="ingredients-list">
+                                        <li>250 gram spaghetti</li>
+                                        <li>50 gram parmesan</li>
+                                    </ul>
+                                </div>
+                            </section>
+    
+    
+                            <section class="recipe-sub-section">
+                                <h3>Method</h3>
+    
+                                <div>
+                                    <div>
+                                        <ol class="method-list">
+                                            <li>
+                                                <div class="grid_5-1">
+                                                    <div>
+                                                        Mix 50gram of parmesan together with egg yolks in a bowel, then set aside.
+                                                    </div>
+                                                    <label class="container">
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="grid_5-1">
+                                                    <div>
+                                                    Boil the pasta al dente; reference your pack for how long the pasta needs.
+                                                    </div>
+                                                    <label class="container">
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="grid_5-1"> 
+                                                    <div>
+                                                    Cut up the bacon in thinner pices. While the pasta is boiling, fry the bacon on a pan at high temperature until it start getting crispy, but is still somewhat chewy.
+                                                    </div>
+                                                    <label class="container">
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div class="grid_5-1">
+                                            </li>
+                                            <li>
+                                                <div class="grid_5-1">
+                                                    <div>
+                                                    Once the pasta is done pull it off the heat. Save a bit of pasta water and drain the rest.
+                                                    </div>
+                                                    <label class="container">
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="grid_5-1">
+                                                    <div>
+                                                    Add pasta to the frying pan, take it off the heat, then add the egg and parmesan mix. Stir in the pan while adding a bit of pasta water.
+                                                    </div>
+                                                    <label class="container">
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="grid_5-1">
+                                                    <div>
+                                                        Top with additional parmesan cheese, add plenty of black pebber and serve
+                                                    </div>  
+                                                    <label class="container">
+                                                        <input type="checkbox" >
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+    
+                                </div>
+    
+                            </section>
+                        </div>
 
-                            </div>
 
-                        </section>
                     </div>
                 </section>
             </div>
