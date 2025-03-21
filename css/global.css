@@ -314,12 +314,12 @@ p {
     }
 
 
-    #carousel {
+    .carousel {
         position: relative;
         height: 480px;
     }
 
-    #carousel-background {
+    .carousel-background {
         background-color: var(--dark);
         height: 330px;
         width: 100%;
@@ -875,12 +875,12 @@ p {
         margin-bottom: 20px;
     }
 
-    #carousel {
+    .carousel {
         position: relative;
         height: 480px;
     }
 
-    #carousel-background {
+    .carousel-background {
         background-color: var(--dark);
         height: 330px;
         width: 100%;
