@@ -33,7 +33,7 @@ h1, h2, h3, h4 {
     font-family: inter;
 }
 
-p, a, ul, li {
+p, a, ul, li, dt, dd {
     font-family: arvo;
 }
 
@@ -696,6 +696,7 @@ p {
 
     .my-links-li {
         margin: 0 20px;
+        padding: 5px;
     }
 
     .active-link {
@@ -861,14 +862,12 @@ p {
     #carousel-section-phone {
         height: 540px;
         overflow-x: hidden;
-        border: 2px solid var();
-        display: none
+        display: none;
     }
 
     #carousel-section-tablet {
         height: 540px;
         overflow-x: hidden;
-        border: 2px solid var();
     }
 
     #carousel-header {
@@ -1068,7 +1067,7 @@ p {
         position: absolute;
         left: 0;
         right: 0;
-        top: 490px;
+        top: 330px;
         margin: auto;
     }
 
